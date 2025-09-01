@@ -1,0 +1,1222 @@
+@font-face {
+    font-family: "Galien Regular";
+    src: url("https://db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.eot");
+    src: url("https://db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d1243736bfe07b546f8f1e54e7804afb.svg#Galien Regular") format("svg");
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot");
+    src: url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.svg#Gilroy-Regular") format("svg");
+}
+
+@font-face {
+    font-family: "Gilroy-SemiBold";
+    src: url("https://db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.eot");
+    src: url("https://db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.svg#Gilroy-SemiBold") format("svg");
+}
+
+@font-face {
+    font-family: "SVN-GilroyLight";
+    src: url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.eot");
+    src: url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8dc2ab580079c6727f9794de4b0081aa.svg#SVN-GilroyLight") format("svg");
+}
+
+body {
+    /*font-family: "Times New Roman", sans-serif;*/
+}
+
+button {
+    display: block;
+}
+
+header {
+    background-image: linear-gradient(
+            to bottom,
+            transparent 0%, /* прозрачность начинается сразу же */ #98C3E8 380% /* цвет заканчивается на 100% длины */
+    );
+    padding: 40px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Galien Regular", sans-serif;
+}
+
+.menu {
+    position: absolute;
+    background: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+    right: 30px;
+}
+
+.offer {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-cont {
+    margin-bottom: 50px;
+}
+
+.offer-cont_title {
+    font-size: 64px;
+    letter-spacing: 0.04em;
+    width: 510px;
+    height: 148px;
+    margin-top: 101px;
+    margin-left: 212px;
+}
+
+.offer-cont_text {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin: 32px 0 71px 213px;
+}
+
+.offer-cont_btn {
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.04em;
+    padding: 17px 45px;
+    border: none;
+    background: #5A98D0;
+    border-radius: 10px;
+    display: inline;
+    margin-left: 213px;
+    margin-bottom: 190px;
+}
+
+.offer-cont_btn:hover {
+    background: blueviolet;
+}
+
+@media screen and (max-width: 768px) {
+    .offer {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .offer-cont {
+        width: 50%;
+
+    }
+
+    .offer-cont_title {
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 40px;
+        letter-spacing: 0.04em;
+        width: 410px;
+        height: 118px;
+    }
+
+    .offer-cont_text{
+        font-family: "Gilroy-Regular", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        margin: 0;
+        width: 320px;
+    }
+
+    .offer-cont_btn {
+        font-size: 12px;
+        color: white;
+        letter-spacing: 0.04em;
+        padding: 12px 19px;
+        border: none;
+        background: #5A98D0;
+        border-radius: 10px;
+        display: inline;
+        margin: 0;
+    }
+
+    .hero {
+        max-width: 100%;
+        height: auto;
+        z-index: -1;
+        background-size: contain;
+    }
+}
+
+.be-static {
+    position: static;
+}
+
+.hero {
+    position: absolute;
+    top: 100px;
+    right: 23px;
+    bottom: 56px;
+    width: 100%;
+    height: 100%;
+    background: url('../img/illustration.svg') no-repeat right top; /**/
+
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .nav .row {
+        justify-content: space-between;
+    }
+
+    .logo {
+        max-width: 24px;
+        height: auto;
+    }
+
+    .menu {
+        background: transparent;
+        border: none;
+        width: 24px;
+        height: 24px;
+        top: 10px;
+        right: 30px;
+    }
+
+    .offer {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .offer-cont {
+        width: 50%;
+
+    }
+
+    .offer-cont_title {
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 20px;
+        letter-spacing: 0.04em;
+        width: 280px;
+        height: 72px;
+    }
+
+    .offer-cont_text{
+        font-family: "Gilroy-Regular", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        margin: 0;
+        width: 320px;
+    }
+
+    .offer-cont_btn {
+        font-size: 12px;
+        color: white;
+        letter-spacing: 0.04em;
+        padding: 12px 19px;
+        border: none;
+        background: #5A98D0;
+        border-radius: 10px;
+        display: inline;
+        margin: 0;
+    }
+
+    .hero {
+        display: none;
+    }
+}
+
+.sec_text {
+    width: 358px;
+    height: 138px;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    margin-left: 213px;
+    color: #316099;
+}
+
+.card_img {
+    display: flex; /* Контейнер для изображения тоже делаем гибким */
+    justify-content: center; /* Центрирование изображения */
+    align-items: center; /* Горизонтальная центрировка */
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.card_first {
+    width: 380px;
+    height: 525px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px 5px rgb(49, 96, 153);
+    position: static;
+    top: 192px;
+    margin-left: 250px;
+    right: 50px;
+}
+
+.card_item {
+    margin-top: 56px;
+}
+
+.card_item_title {
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    margin-left: 48px;
+}
+
+.card_item_text {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-left: 48px;
+    margin-top: 16px;
+    color: #1F3F68;
+    opacity: 60;
+    width: 284px;
+    height: 103px;
+}
+
+.card_item_btn {
+    width: 137px;
+    height: 30px;
+    letter-spacing: 0.05em;
+    background: transparent;
+    border: none;
+    margin-left: 48px;
+    padding-bottom: 73px;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    color: #5A98D0;
+    font-size: 14px;
+}
+
+.card_item_btn img {
+    width: 24px;
+    height: 24px;
+    padding-left: 4px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .sec_text {
+        width: 258px;
+        height: 138px;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        margin-left: 13px;
+        color: #316099;
+    }
+
+    .card_first {
+        width: 280px;
+        height: 355px;
+        right: 30px;
+        border-radius: 10px;
+        margin-left: 20px;
+        box-shadow: 0 10px 25px 5px rgb(49, 96, 153);
+    }
+
+    .card_img {
+        width: 150px;
+        height: 70px;
+        margin: -25px 50px 30px 50px;
+    }
+
+    .card_item_title {
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        margin-left: 28px;
+    }
+
+    .card_item_text {
+        width: 210px;
+        height: 83px;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        margin-left: 28px;
+        margin-top: 16px;
+    }
+
+    .card_item_btn {
+        width: 197px;
+        height: 30px;
+        letter-spacing: 0.05em;
+        background: transparent;
+        border: none;
+        color: #5A98D0;
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .card_item_btn img {
+        width: 24px;
+        height: 24px;
+        padding-left: 4px;
+        padding-right: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card_first {
+        width: 280px;
+        height: 355px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px 5px rgb(49, 96, 153);
+        position: static;
+        top: 192px;
+        margin-left: 0;
+        right: 50px;
+        margin-top: 120px;
+    }
+
+    .card_item {
+        margin-top: 56px;
+    }
+
+    .card_item_title {
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        margin-left: 28px;
+    }
+
+    .card_item_text {
+        font-family: "Gilroy-Regular", sans-serif;
+        font-size: 10px;
+        letter-spacing: 0.05em;
+        margin-left: 48px;
+        margin-top: 16px;
+        color: #1F3F68;
+        opacity: 60;
+        width: 184px;
+        height: 63px;
+    }
+
+    .card_item_btn {
+        width: 137px;
+        height: 30px;
+        letter-spacing: 0.05em;
+        background: transparent;
+        border: none;
+        margin-left: 48px;
+        padding-bottom: 73px;
+        font-family: "Gilroy-SemiBold", sans-serif;
+        color: #5A98D0;
+        font-size: 14px;
+    }
+
+    .card_item_btn img {
+        width: 24px;
+        height: 24px;
+        padding-left: 4px;
+        padding-right: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+
+footer {
+    margin-top: 209px;
+    background: url("../img/Rectangle 3.jpg") no-repeat;
+    height: 1549px;
+    background-size: cover;
+}
+
+.footer_text {
+    width: 223px;
+    height: 92px;
+    margin-top: 96px; /* Вертикальный отступ от верхней части */
+    margin-left: 213px; /* Горизонтальный отступ от левой стороны */
+    padding-top: 96px;
+}
+
+.footer_text p {
+    font-family: "Gilroy-SemiBold", sans-serif;
+    color: white;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+}
+
+.footer_text_dir {
+    width: 540px;
+    height: 80px;
+    padding-top: 96px;
+    margin-left: 97px;
+}
+
+.footer_text_dir p {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    opacity: 60%;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: auto; /* Высота меняется автоматически */
+        background-position: center; /* Централизация фона */
+    }
+
+    .footer_text {
+        width: 100%; /* Текст занимает всю доступную ширину */
+        height: auto;
+        margin: 20px auto; /* Отступы вокруг текста */
+        padding-top: 20px;
+        text-align: center; /* Центрирование текста */
+    }
+
+    .footer_text p {
+        font-size: 24px; /* Уменьшаем шрифт для удобства чтения */
+    }
+
+    .footer_text_dir {
+        width: 100%; /* Тоже занимаем полную ширину */
+        height: auto;
+        margin: 20px auto;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .footer_text_dir p {
+        font-size: 14px; /* Ещё уменьшим текст */
+    }
+}
+
+/* Настройки для смартфонов (ширина <= 320px) */
+@media screen and (max-width: 320px) {
+    footer {
+        height: auto;
+        background-position: center;
+    }
+
+    .footer_text {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .footer_text p {
+        font-size: 18px; /* Максимально сокращённый шрифт */
+    }
+
+    .footer_text_dir {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .footer_text_dir p {
+        font-size: 12px; /* Минимальный шрифт для удобства */
+    }
+}
+
+.custom-table {
+    border-collapse: separate; /* Отделяем границы */
+    border-spacing: 0; /* Убираем межячейковые промежутки */
+    empty-cells: show; /* Показываем пустые клетки */
+    background: #5A98D0; /* Фон всей таблицы */
+    color: white; /* Белый цвет текста */
+    margin-left: 213px;
+}
+
+.tab {
+    margin-top: 233px;
+}
+
+.custom-table td {
+    padding: 41px 46px; /* Внутренние отступы */
+    text-align: center; /* Центрирование текста */
+    border: 1px solid white; /* Граница каждой ячейки */
+    border-style: inset; /* Инвертированная граница для видимости */
+    font-size: 20px;
+}
+
+.custom-table tbody > tr:first-child td {
+    border-top: none; /* Скрываем верхнюю внешнюю границу */
+}
+
+.custom-table tbody > tr:last-child td {
+    border-bottom: none; /* Скрываем нижнюю внешнюю границу */
+}
+
+.custom-table thead th, .custom-table tfoot td {
+    border: none; /* Дополнительно скрываем заголовки и подвалы таблиц */
+}
+
+.custom-table td:first-child {
+    border-left: none; /* Левая внешняя граница первой колонки */
+}
+
+.custom-table td:last-child {
+    border-right: none; /* Правая внешняя граница последней колонки */
+}
+
+@media screen and (max-width: 768px) {
+    .custom-table {
+        margin-left: 0; /* Убираем левое смещение */
+        width: 100%; /* Таблица займет всю ширину */
+    }
+
+    .tab {
+        margin-top: 133px;
+    }
+
+    .custom-table td {
+        padding: 20px; /* внутренние отступы */
+        font-size: 16px; /* Менее крупный шрифт */
+    }
+}
+
+/* Медиа-запрос для смартфонов (до 320px) */
+@media screen and (max-width: 320px) {
+    .custom-table {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .tab {
+        margin-top: 33px;
+    }
+
+    .custom-table td {
+        padding: 10px; /* Минимальные отступы */
+        font-size: 14px; /* Ещё меньше шрифт */
+    }
+
+    /* Преобразование таблицы в список строк*/
+    table, thead, tbody, th, tr, td {
+        display: block;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        float: left; /* Ячейки располагаются рядом друг с другом */
+        clear: both; /* Каждая ячейка начинается с новой строки */
+    }
+}
+
+.footer_down {
+    margin-top: 122px;
+    height: 869px;
+    background: url("../img/Rectangle 4.png") no-repeat;
+    background-size: auto;
+}
+
+.footer_title {
+    width: 317px;
+    height: 92px;
+    margin-top: 96px; /* Вертикальный отступ от верхней части */
+    margin-left: 93px; /* Горизонтальный отступ от левой стороны */
+    padding-top: 96px;
+}
+
+.footer_title p {
+    font-family: "Gilroy-SemiBold", sans-serif;
+    color: white;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+}
+
+.footer_down_text {
+    width: 420px;
+    height: 80px;
+    padding-top: 96px;
+    margin-top: 32px;
+    margin-left: 93px;
+}
+
+.footer_down_text p {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    opacity: 60%;
+    color: white;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 768px) {
+    .footer_down {
+        margin-top: 80px;
+        height: 100%;
+        background: url("../img/Rectangle 4.png") no-repeat;
+        background-size: cover;
+
+    }
+
+    .footer_title, .footer_down_text {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding-top: 96px;
+    }
+
+    .footer_title p {
+        font-size: 20px;
+    }
+
+    .footer_down_text p {
+        font-size: 14px;
+    }
+}
+
+/* Медиа-запрос для мобильных телефонов (экран до 320px) */
+@media screen and (max-width: 320px) {
+    .footer_title, .footer_down_text {
+        padding: 0 10px;
+    }
+
+    .footer_title p {
+        font-size: 18px;
+    }
+
+    .footer_down_text p {
+        font-size: 12px;
+    }
+}
+
+.btn_talk {
+    width: 220px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #5A98D0;
+    border: none;
+    color: white;
+    font-family: "Gilroy-SemiBold", sans-serif;
+}
+
+.btn_class {
+    display: flex;
+    justify-content: flex-end; /* Кнопка вправо */
+    align-items: center; /* Центровка по вертикали */
+    margin-left: 683px;
+    padding-bottom: 20px;
+}
+
+.footer_logo {
+    width: 48px;
+    height: 48px;
+    color: white;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.02em;
+    margin-bottom: 33px;
+}
+
+.footer-wrapper {
+    margin-top: 96px;
+    display: flex;
+    justify-content: start;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.footer-name {
+    display: block;
+    margin-bottom: 20px;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+    padding-left: 40px;
+}
+
+.footer-item {
+    display: flex;
+    text-decoration: none;
+    line-height: 26px;
+    color: white;
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+}
+
+.footer-link {
+    text-decoration: none;
+    line-height: 26px;
+    color: white;
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+}
+
+.footer-email {
+    line-height: 26px;
+    color: white;
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+
+.footer-item_li {
+    display: flex;
+    text-decoration: none;
+    line-height: 26px;
+    color: white;
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+}
+
+/* Планшеты (менее 768px) */
+@media screen and (max-width: 768px) {
+    .footer-wrapper {
+        flex-direction: column; /* Блоки идут вертикально */
+        /*align-items: center; !* Центральное выравнивание *!*/
+        gap: 30px; /* Расстояние между блоками */
+    }
+
+    .footer-menu {
+        text-align: center; /* Центровка пунктов меню */
+    }
+
+    .footer-item, .footer-link {
+        font-size: 14px; /* Уменьшенный шрифт */
+    }
+    .about_title {
+        padding-top: 21px;
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-size: 40px;
+        letter-spacing: 0.04em;
+        color: white;
+    }
+    .about_text {
+        width: 580px;
+        height: 60px;
+        margin-top: 16px;
+        margin-left: 3rem;
+        font-family: "Gilroy-Regular", sans-serif;
+        font-size: 14px;
+        color: white;
+        letter-spacing: 0.04em;
+    }
+}
+
+/* Смартфоны (менее 320px) */
+@media screen and (max-width: 320px) {
+    .footer-wrapper {
+        flex-direction: column; /* То же самое, что и для планшетов */
+        /*align-items: center;*/
+        gap: 10px; /* Еще меньше расстояния */
+    }
+
+    .footer-item, .footer-link {
+        font-size: 12px; /* Еще меньше шрифт */
+    }
+
+    .footer-name {
+        font-size: 14px; /* Название категории также уменьшено */
+    }
+}
+
+.watermark {
+    margin-top: 1.5rem;
+    margin-left: 7.5rem;
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: white;
+    opacity: 40%;
+}
+
+.wrapper {
+    margin-top: 41px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.second_sec {
+    background: url("../img/Mask Group.jpg") no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.about_title {
+    padding-top: 51px;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 44px;
+    letter-spacing: 0.04em;
+    color: white;
+}
+
+.about_text {
+    width: 780px;
+    height: 60px;
+    margin-top: 16px;
+    margin-left: 12rem;
+    font-family: "Gilroy-Regular", sans-serif;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 0.04em;
+}
+
+.wrapper-cop {
+    margin-top: 57px;
+    margin-left: 223px;
+    display: flex;
+    justify-content: start;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.img-group {
+    width: 300px;
+    height: 181px;
+}
+
+.address-title {
+    margin-top: 71px;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+
+.address-text {
+    margin-top: 24px;
+    width: 299px;
+    height: 53px;
+    font-family: "SVN-GilroyLight", sans-serif;
+    font-size: 16px;
+    opacity: 60%;
+    letter-spacing: 0.04em;
+}
+
+.phone-title {
+    margin-top: 40px;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+
+.phone-number {
+    margin-top: 8px;
+}
+
+.phone-number ul {
+    list-style-type: none; /* Убрал маркеры (буллеты) */
+    padding-left: 0; /* Убрал стандартный отступ слева */
+}
+
+.phone-number-item {
+    text-decoration: none;
+    display: flex; /* Ставим flex, чтобы упорядочить контент */
+    align-items: center; /* Центруем изображение и текст по вертикали */
+    padding-top: 16px;
+    opacity: 60%;
+}
+
+.phone-number-item img {
+    margin-right: 16px; /* Добавляем отступ слева от изображения */
+}
+
+.phone-number-item-text {
+    text-decoration: none;
+    line-height: 26px;
+    color: #1F3F68;
+    font-family: "SVN-GilroyLight", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+}
+
+.service-title {
+    margin-top: 40px;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+@media screen and (max-width: 768px) {
+    .about_title {
+        padding-top: 21px;
+        font-size: 40px;
+    }
+    .about_text {
+        width: 580px;
+        height: 60px;
+        margin-top: 16px;
+        margin-left: 30px;
+        font-family: "Gilroy-Regular", sans-serif;
+        font-size: 14px;
+        color: white;
+        letter-spacing: 0.04em;
+    }
+    .wrapper-cop {
+        margin-top: 57px;
+        margin-left: 23px;
+        gap: 40px;
+    }
+    .img-group {
+        width: 110px;
+    }
+    .address-text {
+        margin-top: 24px;
+        width: 229px;
+        height: 53px;
+        font-family: "SVN-GilroyLight", sans-serif;
+        font-size: 16px;
+        opacity: 60%;
+        letter-spacing: 0.04em;
+    }
+}
+@media screen and (max-width: 320px) {
+    .about_title {
+        padding-top: 21px;
+        font-size: 40px;
+    }
+    .about_text {
+        width: 280px;
+        height: 60px;
+        margin-top: 16px;
+        margin-left: 5px;
+        font-family: "Gilroy-Regular", sans-serif;
+        font-size: 12px;
+        color: white;
+        letter-spacing: 0.04em;
+    }
+    .wrapper-cop {
+        margin-top: 57px;
+        margin-left: 23px;
+        gap: 40px;
+    }
+    .img-group {
+        width: 110px;
+    }
+    .address-text {
+        margin-top: 24px;
+        width: 229px;
+        height: 53px;
+        font-family: "SVN-GilroyLight", sans-serif;
+        font-size: 16px;
+        opacity: 60%;
+        letter-spacing: 0.04em;
+    }
+}
+form {
+    width: 540px;
+    height: 800px;
+    border-radius: 10px;
+    right: 212px;
+    box-shadow: 0 10px 25px 5px rgb(49, 96, 153);
+}
+.form_mes{
+    padding: 54px;
+}
+.message-title {
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    padding-bottom: 16px;
+}
+
+.form-label {
+    padding-top: 16px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: #1F3F68;
+    font-size: 16px;
+    opacity: 80%;
+    padding-bottom: 8px;
+}
+
+.form-element {
+    padding-bottom: 16px;
+}
+
+.form-control {
+    font-family: "SVN-GilroyLight", sans-serif;
+    color: rgba(31, 63, 104, 0.2); /* Устанавливаем непрозрачность прямо в цвете */
+    border: 1px #356EAD;
+    width: 428px; /* Устанавливаем ширину */
+    height: 72px; /* Устанавливаем высоту */
+    padding: 75rem;
+}
+
+.form-control#exampleInputMessage {
+    height: 144px; /* Другая высота для текстового поля */
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: rgba(31, 63, 104, 0.2);
+    opacity: 20%;
+}
+
+/* Управляем самим плейсхолдером */
+.form-control::placeholder {
+    font-family: "SVN-GilroyLight", sans-serif;
+    color: rgba(31, 63, 104, 0.2); /* Устанавливаем непрозрачность прямо в цвете */
+    font-size: 16px;
+    letter-spacing: 0.04em;
+}
+@media screen and (max-width: 768px) {
+    .form_mes {
+        width: 440px;
+        height: 800px;
+        border-radius: 10px;
+        right: 212px;
+        box-shadow: 0 10px 25px 5px rgb(49, 96, 153);
+    }
+    .address-text{
+        margin-top: 91px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .form_mes {
+        padding: 20px;
+        width: 260px;
+        height: 680px;
+        border-radius: 10px;
+        right: 0;
+        box-shadow: 0 10px 25px 5px rgb(49, 96, 153);
+    }
+    .img-group{
+        width: 250px;
+    }
+    .img-group img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .address-text{
+        margin-top: 50px;
+    }
+    .message-title {
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-size: 14px;
+    }
+    .wrapper-cop{
+        margin-left: 0;
+    }
+    .footer-wrapper{
+        flex-wrap: unset;
+    }
+}
+.subbtn {
+    margin-top: 72px;
+    width: 428px;
+    height: 72px;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: white;
+    background: #5A98D0;
+    box-shadow: 0 10px 25px 5px rgb(49, 96, 153);
+}
+
+.modal {
+    display: none;
+    width: 100%;
+}
+
+.modal.show {
+    display: block;
+}
+
+/* Медиа для планшета */
+@media screen and (max-width: 768px) {
+    .btn_talk {
+        width: 160px;
+        font-size: 12px;
+    }
+
+    .btn_class {
+        margin-left: 250px;
+        padding-bottom: 20px;
+        margin-right: inherit;
+    }
+
+    .form-control {
+        width: 100%; /* Полная ширина форм */
+    }
+
+    .subbtn {
+        width: 100%; /* Полная ширина кнопки */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств (до 320px) */
+@media screen and (max-width: 320px) {
+    .btn_talk {
+        width: 100%; /* Полная ширина кнопки */
+        height: 48px; /* Уменьшаем высоту */
+    }
+
+    .btn_class {
+        margin-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .form-control {
+        height: 48px; /* Уменьшаем высоту полей ввода */
+    }
+
+    .subbtn {
+        height: 48px; /* Уменьшаем высоту кнопки отправки */
+    }
+}
+
+/* Медиа-запрос для планшетов (≤ 768px) */
+@media screen and (max-width: 768px) {
+    .watermark {
+        margin-left: 2rem; /* Сокращаем левый отступ */
+        font-size: 14px; /* Уменьшаем размер шрифта */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств (≤ 320px) */
+@media screen and (max-width: 320px) {
+    .watermark {
+        margin-left: 1rem; /* Еще сильнее сокращаем отступ */
+        font-size: 12px; /* Дополним уменьшением размера шрифта */
+    }
+}
+
+/* Заблокировать скроллинг при открытом модальном окне */
+body.no-scroll {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
